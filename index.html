@@ -4,118 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>G3 Architects</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <header>
-    <nav class="navbar">
+</head>
+<body class="bg-[#FBF3D5] px-4 sm:px-12">
+
+  <!--header-->
+  <header class="bg-[#9CAFAA] shadow-lg rounded ">
+    <nav class="navbar flex justify-between items-center p-4">
       <h3 class="logo">G3 Architects</h3>
-      <ul class="nav-links">
+      <button class=" sm:hidden text-2xl">
+      ☰
+      </button>
+      <ul class="nav-links hidden sm:block sm:flex sm:gap-4">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact Us</a></li>
         <li><a href="#">Login</a></li>
       </ul>
     </nav>
-    <div class="hero">
-      <h1>Brand New<br>Group of Architects</h1>
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-      <button class="primary-btn">Explore More</button>
-      
-    </div>
-
-    <img src="/images/banner.png" width="1024px" height="520px" alt="">
     
   </header>
 
   <main>
-    <!-- Features Grid Section -->
-    <section class="features">
-      <div class="features-wrapper">
-        <div class="arch-grid">
+    <!--hero-->
+  <section class="hero pt-[60px]">
+    <div class="hero-section flex flex-col-reverse sm:flex-col sm:text-center sm:justify-between sm:items-center ">
+     <div class="hero p-4">
+        <h1 class="text-5xl sm:text-7xl font-black sm:pt-[60px]  ">Brand New<br>Group of Architects</h1>
+         <P class="pt-4 pb-4" >
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+         </P>
+        <button class="primary-btn bg-[#D6A99D] p-1 rounded ">Explore More</button>
+      
+      </div>
+
+      <div class="p-4 pt-6 rounded">
+        <img src="/images/banner.png"  alt="">
+      </div>
+  </div>
+  </section>
+
+    <!--Quick list of Our Features-->
+    <section class="features p-4 pt-[60px] sm:pt-[150px]">
+      <div class="features-wrapper sm:flex sm:justify-between sm:items-center sm:gap-4">
+         <div class="grid grid-cols-2 gap-4 rounded sm:w-1/2  ">
           <img src="images/team1.png" alt="">
           <img src="images/team2.png" alt="">
           <img src="images/team3.png" alt="">
           <img src="images/team4.png" alt="">
-        </div>
-        <div class="text-sec">
-          <p class="section-title">Quick list of Our Features</p>
-          <p class="section-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
-          <button class="primary-btn">Explore More</button>
-        </div>
+         </div>
+         <div class="text-sec sm:w-1/2 sm:flex-col sm:gap-12 sm:items-center sm:text-center sm:h-full sm:p-4">
+          <p class="section-title text-3xl sm:text-5xl pb-8 font-black ">Quick list of Our Features</p>
+          <p class="section-content p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even.</p>
+          <button class="primary-btn bg-[#D6A99D] p-1 rounded">Explore More</button>
+         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2 class="section-title">Features you will love & enjoy</h2>
-      <p class="section-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
-      <div class="feature-cards">
-        <div class="card">
-          <h3>Desktop & Mobile Version</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-        </div>
-        <div class="card">
-          <h3>Drag & Drop Builder</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-        </div>
-        <div class="card">
-          <h3>Awesome Modern Design</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-        </div>
-        <div class="card">
-          <h3>Super Easy to Edit</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-        </div>
+    <!-- Features you will love & enjoy -->
+    <section class="about pt-[60px] sm:pt-[150px] sm:flex">
+      
+      <div class="sm:flex ">
+        <div class="features left-side p-4">
+          <h2 class="section-title text-3xl sm:text-5xl  font-black">Features you will love & enjoy</h2>
+          <p class="section-content pt-4 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
+          <div class="feature-cards w-full h-full">
+            <div class="card p-4 shadow-lg rounded ">
+              <h3 class="text-xl sm:text-3xl  font-black">Desktop & Mobile Version</h3>
+              <p class="pt-4 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            </div>
+            <div class="card p-4 shadow-lg rounded">
+              <h3 class="text-xl sm:text-3xl  font-black">Drag & Drop Builder</h3>
+              <p class="pt-4 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            </div>
+            <div class="card p-4 shadow-lg rounded">
+              <h3 class="text-xl sm:text-3xl  font-black">Awesome Modern Design</h3>
+              <p class="pt-4 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            </div>
+            <div class="card p-4 shadow-lg rounded">
+              <h3 class="text-xl sm:text-3xl  font-black">Super Easy to Edit</h3>
+              <p class="pt-4 pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            </div>
+          </div>
+      
+      </div sm:h-full p-4>
+      <div class="image sm:w-1/2 ">
+          <img src="images/architect.png" alt="">
       </div>
-      <div class="experience">
+      </div>
+      </section>
+
+      <!-- <div class="experience">
         <h1>10+Year</h1>
         <p>Experience</p>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Facts Section -->
-    <section class="facts">
-      <h2>Some Facts</h2>
+    <!--Some Facts-->
+    <section class="facts pt-[60px] sm:pt-[150px]">
+      <h2 class="text-3xl sm:text-5xl  font-black">Some Facts</h2>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-      <div class="facts-grid">
-        <div class="fact-box">
-          <h1>1458</h1>
+      <div class="facts-grid grid grid-cols-2 sm:flex sm:justify-between sm:items-center sm:gap-4 sm:pt-8 ">
+        <div class="fact-box border p-4 shadow-lg rounded">
+          <img src="images/icons/projects.png" alt="">
+          <h1 class="text-xl sm:text-3xl  font-black">1458</h1>
           <p>Project Finished</p>
         </div>
-        <div class="fact-box">
-          <h1>590</h1>
+        <div class="fact-box fact-box shadow-lg border p-4  rounded">
+          <img src="images/icons/customers.png" alt="">
+          <h1 class="text-xl sm:text-3xl  font-black">590</h1>
           <p>Clients Worked</p>
         </div>
-        <div class="fact-box">
-          <h1>22578</h1>
-          <p>Email Send</p>
+        <div class="fact-box fact-box border p-4 shadow-lg rounded">
+          <img src="images/icons/email.png" alt="">
+          <h1 class="text-xl sm:text-3xl  font-black">22578</h1>
+          <p>Email <br> Send</p>
         </div>
-        <div class="fact-box">
-          <h1>54</h1>
+        <div class="fact-box fact-box border p-4 shadow-lg rounded">
+          <img src="images/icons/ribon.png" alt="">
+          <h1 class="text-xl sm:text-3xl  font-black">54</h1>
           <p>Awards Winning</p>
         </div>
       </div>
     </section>
 
-    <!-- Sponsors Section -->
-    <section class="sponsors">
-      <h2>Our Sponsors</h2>
+    <!-- Our Sponsors Section -->
+    <section class="sponsors pt-[60px] sm:pt-[150px]">
+      <h2 class="text-3xl sm:text-5xl  font-black">Our Sponsors</h2>
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
       <div class="sponsor-logos">
-        <img src="images/sponsors1.png" alt="">
-        <img src="images/sponsors2.png" alt="">
-        <img src="images/sponsors3.png" alt="">
-        <img src="images/sponsors4.png" alt="">
+        <img src="images/sponsors/amazon.png" alt="">
+        <img src="images/sponsors/figma.png" alt="">
+        <img src="images/sponsors/google.png" alt="">
+        <img src="images/sponsors/spotify.png" alt="">
+        <img src="images/sponsors/telerama.png" alt="">
       </div>
     </section>
   </main>
 
   <footer>
-    <p>All rights reserved copyright@2023 startup landing page design</p>
+    <div class="footer-links flex justify-between items-center p-4 bg-[#9CAFAA]">
+      <ul class="flex flex-col gap-4">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <p>© 2023 G3 Architects</p>
+   
   </footer>
+
+  <div class="box1 bg-[#D6A99D]">red</div>
+  <div class="box2 bg-[#FBF3D5]">cream</div>
+  <div class="box3 bg-[#D6DAC8]">lemon</div>
+  <div class="box4 bg-[#9CAFAA]">grey-green</div>
 
 </body>
 </html>
